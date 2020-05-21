@@ -1,0 +1,8 @@
+{% extends 'basicapp/base.html' %}
+{% load my_extras %}
+
+{% block content %}
+  <h1>welcome to the index</h1>
+  {{ text|cut_string:'world' }}
+  {{ number|add:'99' }}
+{% endblock content %}
